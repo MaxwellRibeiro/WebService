@@ -22,7 +22,7 @@ namespace WebService.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, resposta);
             }
 
-            resposta.resultado = (nums.n1 / nums.n2) * 100;
+            resposta.resultado = (nums.n1 * nums.n2) / 100;
             return Request.CreateResponse(HttpStatusCode.OK, resposta);
         }
     }
